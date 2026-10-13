@@ -33,30 +33,18 @@ while True:
         print("Invalid input! Please input a whole number from 1 to 4.")
 
 # Behind the scenes processes in calculating the result based on all inputs of the user. Also validates stuff like dividing by 0 and overall inputs. Displays result at the end.
-def addition():
-    num1 + num2
-
-def subtraction():
-    num1 + num2
-
-def multiplication():
-    num1 + num2
-
-def division():
-    num1 + num2
-
 if operation == 1:
-    print("The result based on your inputs is", addition())
+    print("The result based on your inputs is", num1 + num2)
 
 elif operation == 2:
-    print("The result based on your inputs is", subtraction())
+    print("The result based on your inputs is", num1 - num2)
 
 elif operation == 3:
-    print("The result based on your inputs is", multiplication())
+    print("The result based on your inputs is", num1 * num2)
 
 elif operation == 4:
     if num2 != 0:
-        print("The result based on your inputs is", division())
+        print("The result based on your inputs is", num1 / num2)
     else:
         print("Error: division by 0 is undefined.")
 
