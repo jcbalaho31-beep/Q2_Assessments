@@ -27,28 +27,40 @@ while True:
         if operation in (1, 2, 3, 4):
             break
         else:
-            print("Invalid input! Please choose the numbers from 1 to 4 based on the operations of choice.")
+            print("Invalid input! Please enter the number corresponding to your mathematical operation of your choice displayed.")
 
     except ValueError:
-        print("Invalid input! Please input a whole number from 1 to 4.")
+        print("Invalid input! Enter the number corresponding to your choice only.")
 
 # Behind the scenes processes in calculating the result based on all inputs of the user. Also validates stuff like dividing by 0 and overall inputs. Displays result at the end.
+def addition():
+    return num1 + num2
+
+def subtraction():
+    return num1 - num2
+
+def multiplication():
+    return num1 * num2
+
+def division():
+    return num1 / num2
+
 if operation == 1:
-    print("The result based on your inputs is", num1 + num2)
+    print("The result based on your inputs is", addition())
 
 elif operation == 2:
-    print("The result based on your inputs is", num1 - num2)
+    print("The result based on your inputs is", subtraction())
 
 elif operation == 3:
-    print("The result based on your inputs is", num1 * num2)
+    print("The result based on your inputs is", multiplication())
 
 elif operation == 4:
     if num2 != 0:
-        print("The result based on your inputs is", num1 / num2)
+        print("The result based on your inputs is", division())
     else:
         print("Error: division by 0 is undefined.")
 
 else:
   print("Invalid input/s. Please try again.")
 
-# Reflection: Learning and doing modular programming was so fun. Creating the parameters used took some time because I wanted to validate the inputs for them along with making sure they don't stack and make errors. Along with validating, I had to make a response to the user to let them know if something was undefined or not in range with the choices.
+# Reflection: Learning and doing modular programming was so fun. Creating the functions took some time along with the parameters used. I had an issue with creating the functions because I still did not know how to use the return statement/keyword, which made the code always give a result of "None." It was something new I learned. Another thing that took some time is making the validations such as letting the user know division with 0 is undefined and making sure the inputs are in range.
