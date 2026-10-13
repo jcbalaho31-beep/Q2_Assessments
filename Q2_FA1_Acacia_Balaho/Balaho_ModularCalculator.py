@@ -27,26 +27,40 @@ while True:
         if operation in (1, 2, 3, 4):
             break
         else:
-            print("Invalid input! Please choose 1 to 4 based on the operations of choice.")
+            print("Invalid input! Please choose the numbers from 1 to 4 based on the operations of choice.")
 
     except ValueError:
         print("Invalid input! Please input a whole number from 1 to 4.")
 
 # Behind the scenes processes in calculating the result based on all inputs of the user. Also validates stuff like dividing by 0 and overall inputs. Displays result at the end.
+def addition():
+    num1 + num2
+
+def subtraction():
+    num1 + num2
+
+def multiplication():
+    num1 + num2
+
+def division():
+    num1 + num2
+
 if operation == 1:
-    print("The result based on your inputs is", num1 + num2)
+    print("The result based on your inputs is", addition())
 
 elif operation == 2:
-    print("The result based on your inputs is", num1 - num2)
+    print("The result based on your inputs is", subtraction())
 
 elif operation == 3:
-    print("The result based on your inputs is", num1 * num2)
+    print("The result based on your inputs is", multiplication())
 
 elif operation == 4:
     if num2 != 0:
-        print("The result based on your inputs is", num1 / num2)
+        print("The result based on your inputs is", division())
     else:
-        print("Error: division by 0 is undefines.")
+        print("Error: division by 0 is undefined.")
 
 else:
   print("Invalid input/s. Please try again.")
+
+# Reflection: Learning and doing modular programming was so fun. Creating the parameters used took some time because I wanted to validate the inputs for them
