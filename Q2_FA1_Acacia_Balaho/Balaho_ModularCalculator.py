@@ -51,4 +51,4 @@ elif operation == 4:
 else:
   print("Invalid input/s. Please try again.")
 
-# Reflection: Learning and doing modular programming was so fun. Creating the parameters used took some time because I wanted to validate the inputs for them
+# Reflection: Learning and doing modular programming was so fun. Creating the parameters used took some time because I wanted to validate the inputs for them along with making sure they don't stack and make errors. Along with validating, I had to make a response to the user to let them know if something was undefined or not in range with the choices.
