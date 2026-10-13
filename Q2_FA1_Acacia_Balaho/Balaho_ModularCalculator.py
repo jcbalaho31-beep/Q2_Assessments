@@ -63,4 +63,4 @@ elif operation == 4:
 else:
   print("Invalid input/s. Please try again.")
 
-# Reflection: Learning and doing modular programming was so fun. Creating the functions took some time along with the parameters used. I had an issue with creating the functions because I still did not know how to use the return statement/keyword, which made the code always give a result of "None." It was something new I learned. Another thing that took some time is making the validations such as letting the user know division with 0 is undefined and making sure the inputs are in range.
+# Reflection: I created four functions for addition, subtraction, multiplication, and division, using num1 and num2 as parameters. The arguments passed when calling these functions are the two numbers entered by the user. Each function returns a calculated value, which is displayed using print(). Modular programming makes the code more organized, readable, and easier to maintain.
